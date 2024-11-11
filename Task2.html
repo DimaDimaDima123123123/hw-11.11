@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Task 2</title> 
+    <style> 
+        #heart 
+        { 
+        width: 200px; 
+        height: 200px; 
+        filter: grayscale(100%); 
+        } 
+        #heart:hover 
+        { 
+            animation: MyAnimation 3s; 
+        } 
+        @keyframes MyAnimation 
+        { 
+            0%, 100%  
+            { 
+                width: 200px; 
+                height: 200px; 
+                filter: grayscale(100%); 
+            } 
+            50% 
+            { 
+                width: 400px; 
+                height: 400px; 
+                filter: grayscale(0%); 
+            } 
+        } 
+    </style> 
+</head> 
+<body> 
+    <img  id="heart" src="favorites.png"> 
+</body> 
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Task 1</title> 
+    <style> 
+    .block 
+    { 
+    border: 2px solid orange; 
+    height: 100px; 
+    width: 300px; 
+    } 
+    .moving-block 
+    { 
+    height: 100px; 
+    width: 100px; 
+    background-color: orange; 
+    animation: MyAnimation 3s infinite; 
+    position: relative; 
+    } 
+        @keyframes MyAnimation 
+        { 
+            0% 
+            { 
+                margin-left: 0%; 
+            } 
+            50% 
+            { 
+                margin-left: 67%; 
+            }   
+            100% 
+            { 
+                margin-left: 0%; 
+            }     
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="block"> 
+        <div class="moving-block"></div> 
+    </div> 
+     
+</body> 
+</html>
